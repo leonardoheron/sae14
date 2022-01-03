@@ -17,4 +17,13 @@ class LeoController extends AbstractController
             'controller_name' => 'LeoController',
         ]);
     }
+    /**
+     * @Route("/l", name="l")
+     */
+    public function portfolio(): Response
+    {
+        return $this->render('leo/portfolio.html.twig', [
+            'controller_name' => 'LeoController',
+        ]);
+    }
 }
