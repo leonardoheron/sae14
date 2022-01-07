@@ -8,17 +8,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class LeoController extends AbstractController
 {
+    
     /**
      * @Route("/", name="")
-     */
-    public function index(): Response
-    {
-        return $this->render('leo/index.html.twig', [
-            'controller_name' => 'LeoController',
-        ]);
-    }
-    /**
-     * @Route("/l", name="l")
      */
     public function portfolio(): Response
     {
