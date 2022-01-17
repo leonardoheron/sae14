@@ -28,4 +28,14 @@ class LeoController extends AbstractController
             'controller_name' => 'LeoController',
         ]);
     }
+
+    /**
+     * @Route("/en", name="en")
+     */
+    public function en(): Response
+    {
+        return $this->render('leo/en.html.twig', [
+            'controller_name' => 'LeoController',
+        ]);
+    }
 }
